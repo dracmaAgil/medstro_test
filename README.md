@@ -23,24 +23,17 @@ Julian Alfonso Montes Valdenebro.
   **_Earth(name, size, destroyed):_**
     
     * Create an instance of earth class:
-
       * pl = Earth.new('tierra', 'big', false)
-    
     * create method:
-
       * pl.create('human')
-    
     * destroyed method:
-
       * This method just check if the earth value destroyed is tru or false.
 
   **_Human(name, age, gender, hungry):_**
     
     * Create an instance of human class:
       Human.new('Poncho', '8', 'male', true)
-
     * eat_food(food) method:
-
       * We need to creat an instance of food class and send it to this method; after that, check if human is hungry and if is true print this:
         * "#{@name} is eating this #{food.name} and is not hungry anymore"
       * If is not hungry, print this: 
