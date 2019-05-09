@@ -1,9 +1,3 @@
-# run irb on console and then require this file
-# irb(main):001:0> require './medstro_test.rb'
-
-# create and instance of earth and test create method 
-# pl = Earth.new('tierra', 'big', true)
-# pl.create('human')
 class Earth
   attr_reader :name, :size, :destroyed
   def initialize(name, size, destroyed)
@@ -22,10 +16,10 @@ class Earth
       f = Food.new('protein', 'beef meat')
       puts "Fod #{f.type} created"
     when 'dog'
-      d = Dog.new('jack', 'fb', '3', true)
+      d = Dog.new('jack', 'french bulldog', '3', true)
       puts "Dog #{d.name} created"
     when 'cat'
-      c = Cat.new('hdp', 'angora', '2', false)
+      c = Cat.new('kitty', 'angora', '2', false)
       puts "Cat #{c.name} created"
     end
       
@@ -36,8 +30,6 @@ class Earth
   end
 end
 
-# create an instance of human, dog, earth
-# cat and food to test every method
 class Human
   attr_reader :name, :age, :gender, :hungry
   def initialize(name, age, gender, hungry)
@@ -64,14 +56,15 @@ class Human
   end
 
   def destroy_earth(earth)
-    earth.destroy
-    puts "#{@name} has destroyed the earth"
+    if earth.destroy
+      puts "#{@name} has destroyed the earth"
+    else
+      puts "the earth is already destroyed"
+    end
   end
 
 end
 
-# to test food create human o dog or cat and
-# test method eat_food(f)
 class Food
   attr_reader :type, :name
   def initialize(type, name)
@@ -80,8 +73,6 @@ class Food
   end
 end
 
-# create an instance of human, dog, earth
-# cat and food to test every method
 class Animal
   attr_reader :name, :breed, :age, :hungry
   def initialize(name, breed, age, hungry)
@@ -104,9 +95,7 @@ class Animal
   end
 
 end
-# to teste Dog or cat, create an isntance
-# and test the son classes methods and father
-# class methods too
+
 class Dog < Animal
 
   def bark
