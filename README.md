@@ -25,7 +25,7 @@ Julian Alfonso Montes Valdenebro.
     * Create an instance of earth class:
       * pl = Earth.new('tierra', 'big', false)
     * create method:
-      * pl.create('human')
+      * pl.create('human')*
     * destroyed method:
       * This method just check if the earth value destroyed is tru or false.
 
