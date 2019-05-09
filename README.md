@@ -10,7 +10,7 @@ Julian Alfonso Montes Valdenebro.
 
   In this file are contained Earth, Human, Food, Animal Dog and Cat classes.
 
-  Dog and Cat sub-classes of Animal Class; all the sharing behavior or methods are in animal class, only the singular behavior like "bark" belongs to their owner class
+  Dog and Cat are sub-classes of Animal Class; all the shared behavior or methods are in animal class, only the singular behaviors/methods like "bark" belongs to their owner class
 
 
 **How to test this file:**
@@ -27,14 +27,14 @@ Julian Alfonso Montes Valdenebro.
     * create method:
       * pl.create('human')*
     * destroyed method:
-      * This method just check if the earth value destroyed is tru or false.
+      * This method just check if the earth value destroyed is true or false.
 
   * **_Human(name, age, gender, hungry):_**
     
     * Create an instance of human class:
       Human.new('Poncho', '8', 'male', true)
     * eat_food(food) method:
-      * We need to creat an instance of food class and send it to this method; after that, check if human is hungry and if is true print this:
+      * We need to create an instance of food class and send it to this method; after that, check if human is hungry and if is true print this:
         * "#{@name} is eating this #{food.name} and is not hungry anymore"
       * If is not hungry, print this: 
         * "#{@name} is not hungry"
@@ -49,7 +49,7 @@ Julian Alfonso Montes Valdenebro.
 
   * **_Dog/Cat:_**
     
-    *  When we create a dog/cat instance, we are crating a subclass of animal class and we can use all the methods on the father class and we need to create with all the animal class attributes like this:
+    *  When we create a dog/cat instance, we are crating a subclass of animal class, sending all the animal attributes like this:
       * dog:
         * Dog.new('jack', 'french bulldog', '3', true)
       * cat:
@@ -62,7 +62,7 @@ Julian Alfonso Montes Valdenebro.
         * "#{@name} is meowing"
 
     * eat_food(food) method:
-      * We need to creat an instance of food class and send it to this method; after that, check if dog/cat is hungry and if is true print this: 
+      * We need to create an instance of food class and send it to this method; after that, check if dog/cat is hungry and if is true print this: 
         * "#{self.name} is eating this #{food}, is not hungry anymore"
       * If is not hungry, print this: 
         * "#{self.name} is not hungry"
@@ -70,4 +70,4 @@ Julian Alfonso Montes Valdenebro.
 
 
 
-**Note(*):** We ca use only this strings to test this metods: 'human', 'food', 'dog' and 'cat'
+**Note(*):** We can use only this strings to test this method: 'human', 'food', 'dog' and 'cat'
