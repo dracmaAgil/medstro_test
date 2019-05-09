@@ -10,7 +10,7 @@ Julian Alfonso Montes Valdenebro.
 
   In this file are contained Earth, Human, Food, Animal Dog and Cat classes.
 
-  Dog and Cat sub-classes of Animal Class; all the sharing behavior or methods are in animal class, only the singular behavior like "bark" belongs to the owner class
+  Dog and Cat sub-classes of Animal Class; all the sharing behavior or methods are in animal class, only the singular behavior like "bark" belongs to their owner class
 
 
 **How to test this file:**
@@ -20,7 +20,7 @@ Julian Alfonso Montes Valdenebro.
 
 **How to test Classes:**
 
-  **_Earth(name, size, destroyed):_**
+  * **_Earth(name, size, destroyed):_**
     
     * Create an instance of earth class:
       * pl = Earth.new('tierra', 'big', false)
@@ -29,7 +29,7 @@ Julian Alfonso Montes Valdenebro.
     * destroyed method:
       * This method just check if the earth value destroyed is tru or false.
 
-  **_Human(name, age, gender, hungry):_**
+  * **_Human(name, age, gender, hungry):_**
     
     * Create an instance of human class:
       Human.new('Poncho', '8', 'male', true)
@@ -47,7 +47,7 @@ Julian Alfonso Montes Valdenebro.
       * If is true, print this:
         * "the earth is already destroyed".
 
-  **_Dog/Cat:_**
+  * **_Dog/Cat:_**
     
     *  When we create a dog/cat instance, we are crating a subclass of animal class and we can use all the methods on the father class and we need to create with all the animal class attributes like this:
       * dog:
