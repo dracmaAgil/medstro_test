@@ -21,6 +21,8 @@ class Earth
     when 'cat'
       c = Cat.new('kitty', 'angora', '2', false)
       puts "Cat #{c.name} created"
+    else
+      puts "Earth can't create this #{object}"
     end
       
   end
